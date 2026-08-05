@@ -12,7 +12,4 @@ RUN rpm-ostree install \
     wireplumber \
     lxqt-policykit \
     swaybg \
-    && rpm-ostree cleanup -a
-
-# Clean up and finalize 
-RUN ostree container commit
+    && rpm-ostree cleanup --pending
