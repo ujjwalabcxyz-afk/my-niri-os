@@ -13,5 +13,8 @@ RUN rpm-ostree install \
     lxqt-policykit \
     swaybg
 
-# Finalize the container state cleanly without cleanup scripts
+# BAKE THE CONFIG DIRECTLY INTO THE OS BEFORE BOOTING
+COPY config/files/ /
+
+# Finalize the container state cleanly
 RUN ostree container commit
