@@ -10,7 +10,7 @@ RUN rpm-ostree install \
     xorg-x11-server-Xwayland \
     pipewire \
     wireplumber \
-    polkit-gnome \
+    lxqt-policykit \
     swaybg \
     && rpm-ostree cleanup -a
 
