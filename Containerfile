@@ -11,7 +11,9 @@ RUN rpm-ostree install \
     pipewire \
     wireplumber \
     lxqt-policykit \
-    swaybg
+    swaybg \
+    fastfetch \
+    cava
 
 # BAKE THE CONFIG DIRECTLY INTO THE OS BEFORE BOOTING
 COPY config/files/ /
